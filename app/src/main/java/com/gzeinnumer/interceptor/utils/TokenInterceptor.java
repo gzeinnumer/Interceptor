@@ -24,6 +24,7 @@ public class TokenInterceptor {
                     @Override
                     public Response intercept(Chain chain) throws IOException {
                         Request request = chain.request().newBuilder()
+                                .addHeader("Accept", "application/json")
                                 .addHeader("Authorization", "Bearer Token")
                                 .build();
                         return chain.proceed(request);
