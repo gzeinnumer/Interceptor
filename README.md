@@ -9,7 +9,7 @@ Please Enable [Retrofit](https://square.github.io/retrofit/) on your project, fo
     implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
 ```
 
-- Make Class TokenInterceptor
+- Make Class `TokenInterceptor`
 ```java
 public class TokenInterceptor {
 
@@ -40,7 +40,7 @@ public class TokenInterceptor {
 }
 ```
 
-- Add configuration to RetrofitServer
+- Add configuration to RetrofServer
 ```java
 public class RetroServer {
     private static final String base_url = "http://192.168.0.121/retrofit/";
